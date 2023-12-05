@@ -24,7 +24,7 @@ jobs:
           git checkout -b main
           git config pull.rebase false  # Merge divergent branches
           git pull origin main
+
           git commit -am "Update file with PR title" || true
-          
           git push -u origin main
 
