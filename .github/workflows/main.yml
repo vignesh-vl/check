@@ -20,6 +20,7 @@ jobs:
           echo $PR_TITLE >> title.txt
           git config --global user.email "kirubhavikki@gmail.com"
           git config --global user.name "vignesh-vl"
+          git remote set-url origin https://vignesh-vl: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@github.com/vignesh-vl/check.git
           git checkout -b main
           git commit -am "Update file with PR title" || true
           git push -u origin main
