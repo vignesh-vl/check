@@ -17,8 +17,8 @@ jobs:
 
       - name: Update Text File
         run: |
-          echo $PR_TITLE >> path/to/your/textfile.txt
-          git config --global user.email "actions@github.com"
-          git config --global user.name "GitHub Actions"
+          echo $PR_TITLE >> title.txt
+          git config --global user.email "kirubhavikki@gmail.com"
+          git config --global user.name "vignesh-vl"
           git commit -am "Update file with PR title" || true
           git push origin main
