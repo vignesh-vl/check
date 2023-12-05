@@ -20,5 +20,6 @@ jobs:
           echo $PR_TITLE >> title.txt
           git config --global user.email "kirubhavikki@gmail.com"
           git config --global user.name "vignesh-vl"
+          git checkout -b main
           git commit -am "Update file with PR title" || true
-          git push origin main
+          git push -u origin main
